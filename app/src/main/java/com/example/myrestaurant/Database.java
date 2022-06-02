@@ -4,7 +4,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Database {
-    ArrayList<Item> items = new ArrayList<>(Arrays.asList(
+
+    static ArrayList<Category> categories = new ArrayList<Category>(Arrays.asList(
+            new Category("Hamburger", R.drawable.grilled_chicken),
+            new Category("Pasta", R.drawable.lasagna),
+            new Category("Salad", R.drawable.caesar),
+            new Category("Sandwich", R.drawable.club)
+
+    ));
+    static ArrayList<Item> items = new ArrayList<>(Arrays.asList(
             new Item("Hamburger", "Chicken Burger", "Delicious grilled chicken with lettuce and tomato.", 13.99, R.drawable.grilled_chicken),
             new Item("Hamburger", "BLT", "Bacon, lettuce and tomato classic.", 12.99, R.drawable.blt),
             new Item("Hamburger", "Pork", "Grass fed grilled ground pork with bbq sauce and onions.", 16.99, R.drawable.pork),
