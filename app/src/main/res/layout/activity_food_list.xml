@@ -1,41 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".FoodListActivity">
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".FoodListActivity"
+        android:theme="@style/DarkTheme">
 
     <ListView
-        android:id="@+id/food_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1">
+            android:id="@+id/food_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
 
 
     </ListView>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/food_list_total"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.5"
-            android:background="@color/grey"
-            android:gravity="center"
-            android:text="Total: " />
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@color/grey"
+                android:gravity="right"
+                android:text="Total: "
+                android:textSize="30dp" />
 
-        <!--        <Button-->
-        <!--            android:id="@+id/food_list_cart"-->
-        <!--            android:layout_width="0dp"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_weight="1"-->
-        <!--            android:background="#ABDDDDDD"-->
-        <!--            android:text="SEE CART" />-->
+        <TextView
+                android:id="@+id/food_list_total"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@color/grey"
+                android:gravity="left"
+                android:textSize="30dp" />
+
+        <Button
+                android:id="@+id/see_cart_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="SEE CART"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+
     </LinearLayout>
 
 </LinearLayout>
